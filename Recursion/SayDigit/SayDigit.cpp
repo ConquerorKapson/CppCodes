@@ -2,7 +2,7 @@
 using namespace std;
 
 void sayDigitHelper(int n, string words[]){
-    if(n < 0){
+    if(n <= 0){
         return;
     }
     int to_say = n%10;
