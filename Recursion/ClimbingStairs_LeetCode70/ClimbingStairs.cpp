@@ -41,8 +41,10 @@ int main(){
     int number_of_ways2 = climbStairs2(n);
     cout << "number of ways to climb stairs effective: " << number_of_ways2;
     
+    cout<<endl;
+    
     int number_of_ways = climbStairs(n);
-    cout << "number of ways to climb stairs: " << number_of_ways;
+    cout << "number of ways to climb stairs: " << number_of_ways<<endl;
 
     return 0;
 }
