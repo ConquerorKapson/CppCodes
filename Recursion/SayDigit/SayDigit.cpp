@@ -2,13 +2,11 @@
 using namespace std;
 
 void sayDigitHelper(int n, string words[]){
-    if(n <= 0){
+    if(n < 0){
         return;
     }
-    
-    sayDigitHelper(n/10, words);
-    
     int to_say = n%10;
+    sayDigitHelper(n/10, words); 
     cout<<words[to_say]<<" ";
 }
 
