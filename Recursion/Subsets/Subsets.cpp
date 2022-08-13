@@ -26,13 +26,15 @@ vector<vector<int>> subsets(vector<int>& nums) {
 }
 
 int main(){
-    vector<int>nums{2, 3, 5};
+    vector<int>nums{2, 8, 6, 10, 20};
     vector<vector<int>>ans = subsets(nums);
 
     for(vector<int> i : ans){
+        cout<<"{";
         for(int x: i){
-            cout<<x<<" ";
+            cout<<x<<", ";
         }
+        cout<<"}";
         cout<<endl;
     }
 }
