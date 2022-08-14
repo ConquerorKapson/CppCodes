@@ -29,6 +29,7 @@ int main(){
     vector<int>nums{2, 8, 6, 10, 20};
     vector<vector<int>>ans = subsets(nums);
 
+    //dummy commit
     for(vector<int> i : ans){
         cout<<"{";
         for(int x: i){
