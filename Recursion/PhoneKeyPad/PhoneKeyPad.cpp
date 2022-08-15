@@ -18,6 +18,9 @@ void phoneKeypadHelper(string digits, vector<string>& result, string output, vec
 }
 
 void phoneKeypad(string digits, vector<string>& result){
+    if(digits == "" || digits == " "){
+        return;
+    }
     int index = 0;
     int lastIndex = digits.length()-1;
     string output = "";
