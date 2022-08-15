@@ -42,5 +42,4 @@ int main(){
     for(string str: result){
         cout<<"["<<str<<"]"<<endl;
     }
-    return 0;
 }
