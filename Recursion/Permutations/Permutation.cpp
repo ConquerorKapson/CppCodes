@@ -9,7 +9,6 @@ void permutationHelper(string str, vector<string>& permutations, int index, int 
         return;
     }
 
-
     for(int i = index ; i < str.length() ; i ++){
         swap(str[index], str[i]);
         permutationHelper(str, permutations, index+1, lastIndex);
