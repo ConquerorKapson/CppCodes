@@ -25,7 +25,6 @@ vector<vector<int>> subsets(vector<int>& nums) {
     return result;
 }
 
-//dummmy
 int main(){
     vector<int>nums{2, 8, 6, 10, 20};
     vector<vector<int>>ans = subsets(nums);
