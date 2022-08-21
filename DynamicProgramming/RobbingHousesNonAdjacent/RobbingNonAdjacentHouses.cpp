@@ -16,7 +16,7 @@ int main(){
     dp[1] = max(elements[0], elements[1]);
 
     for(int i = 2 ; i < elements.size() ; i++){
-        dp[i] = max((elements[i] + elements[i-2]), dp[i-1]);
+        dp[i] = max((elements[i] + dp[i-2]), dp[i-1]);
     }
 
     cout<<"Max robbery amount : "<<dp[elements.size()-1];
